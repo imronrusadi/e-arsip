@@ -20,6 +20,12 @@ class Arsip extends Migration
             'no_arsip' => [
                 'type'       => 'VARCHAR',
                 'constraint' => '50',
+                'null'       => true
+            ],
+            'nama_arsip' => [
+                'type'       => 'VARCHAR',
+                'constraint' => '255',
+                'null'       => true
             ],
             'deskripsi' => [
                 'type'       => 'TEXT',
@@ -36,6 +42,12 @@ class Arsip extends Migration
             'file' => [
                 'type'       => 'VARCHAR',
                 'constraint' => '100',
+                'null'       => true
+            ],
+            'ukuran_file' => [
+                'type'       => 'INT',
+                'constraint' => 11,
+                'null' => true,
             ],
             'created_at' => [
                 'type'       => 'DATETIME',

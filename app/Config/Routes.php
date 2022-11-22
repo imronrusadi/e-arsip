@@ -46,6 +46,11 @@ $routes->post('/simpankat', 'Kategori::simpan');
 $routes->post('/updatekat', 'Kategori::update');
 $routes->post('/hapuskat/(:num)', 'Kategori::hapus/$1');
 
+$routes->get('/arsip', 'Arsip::index');
+$routes->post('/tambaharsip', 'Arsip::simpan');
+$routes->post('/updatearsip', 'Arsip::update');
+
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

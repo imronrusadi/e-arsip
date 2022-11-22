@@ -31,7 +31,10 @@ class Auth extends BaseController
         if ($user) {
             // $hast = password_hash($user['password'], PASSWORD_BCRYPT);
             if (password_verify($post['password'], $user->password)) {
-                $params = ['id_user' => $user->id_user];
+                $params = [
+                    'id_user' => $user->id_user,
+                    'id_dept' => $user->id_dept
+                ];
                 session()->set($params);
                 return redirect()->to(base_url('home'));
             } else {

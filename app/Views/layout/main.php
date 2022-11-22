@@ -51,7 +51,7 @@
                         <img src="<?= base_url(); ?>/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block">Alexander Pierce</a>
+                        <a href="#" class="d-block"><?= userLogin()->nama_user; ?></a>
                     </div>
                 </div>
 
@@ -133,6 +133,11 @@
     <script>
         $(document).ready(function() {
             $('#kategori').DataTable();
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#arsip').DataTable();
         });
     </script>
 </body>

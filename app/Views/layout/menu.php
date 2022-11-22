@@ -25,6 +25,16 @@
         </p>
     </a>
 </li>
+<li class="nav-header">ARSIP</li>
+
+<li class="nav-item">
+    <a href="<?= base_url('arsip'); ?>" class="nav-link">
+        <i class="nav-icon fas fa-file-archive"></i>
+        <p>
+            Data Arsip
+        </p>
+    </a>
+</li>
 <li class="nav-header">LOG OUT</li>
 <li class="nav-item">
     <a href="<?= site_url('logout'); ?>" class="nav-link">
